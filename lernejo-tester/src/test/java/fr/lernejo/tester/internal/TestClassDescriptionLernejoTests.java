@@ -19,9 +19,4 @@ public class TestClassDescriptionLernejoTests
             .extracting(method -> method.getName())
             .containsExactlyInAnyOrder("ok", "ko");
     }
-
-    public static void main(String[] args)
-    {
-        new TestClassDescriptionLernejoTests().should_discover_only_marked_methods();
-    }
 }
