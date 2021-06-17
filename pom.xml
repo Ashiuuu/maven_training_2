@@ -26,6 +26,16 @@
         <maven.compiler.target>16</maven.compiler.target>
     </properties>
 
+    <dependencyManagement>  <!--(1)-->
+        <dependencies>
+            <dependency>
+                <groupId>org.reflections</groupId>
+                <artifactId>reflections</artifactId>
+                <version>0.9.12</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <dependencies>
         <dependency>
             <groupId>org.assertj</groupId>

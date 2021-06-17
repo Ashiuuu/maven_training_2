@@ -28,4 +28,9 @@ public class TestClassDescription
             .filter(m -> m.isAnnotationPresent(TestMethod.class))
             .collect(Collectors.toList());
     }
+
+    public String getClassName()
+    {
+        return this.cl.getName();
+    }
 }
